@@ -1,8 +1,18 @@
 .main{
     /* color: white; */
-    padding-top: 13em;
+    padding-top: 5em;
     padding-inline: 10px;
     text-align: justify;
+}
+
+.key{
+    margin: 20px;
+    border: 1px solid rgb(39, 2, 2);
+    padding: 20px;
+}
+
+.key ul{
+    list-style: none;
 }
 
 

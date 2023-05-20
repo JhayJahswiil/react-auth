@@ -21,6 +21,9 @@ body{
     color: white;
 }
 
+.nav-btn{
+    width: 72px;
+}
 .nav-sec ul{
     display: flex;
     gap: 20px;
@@ -61,11 +64,40 @@ body{
 
 @media screen and (max-width:630px){
     .ul{
-        display: none !important;
-        border: 2px solid red;
+        /* display: none !important; */
+        /* border: 2px solid red; */
+        flex-direction: row;
+        flex-wrap: wrap;
+        position: absolute;
+        /* right: 0; */
+        /* top: 60px; */
+        left: 0;
+        top: 0;
+        background-color: white;
+        /* width: 150px; */
+        width: 100%;
+        /* height: 91vh; */
+        height: 7vh;
+        padding: 20px;
+        text-align: center;
     }
+
+    .nav-sec ul a{
+        text-decoration: none;
+        color: black;
+        font-weight: bolder;
+    }
+
     .hamburger{
         display: block;
+    }
+
+    .nav-sec ul a::after{
+        margin: auto;
+    }
+
+    .nav-sec ul a:hover::after{
+        width: 50%;
     }
 }
 

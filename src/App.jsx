@@ -14,6 +14,12 @@ import "./App.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 function App() {
+  // const [hamburgerOpen, setHamburgerOpen] = useState(false)
+
+  const toggleHamburger = () => {
+    document.getElementsByClassName('bars').style.display = 'none'
+  }
+
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   useEffect(() => {
@@ -44,7 +50,7 @@ function App() {
     <div>
       <nav className="nav-sec">
         <span>-EDSA-</span>
-        <div className="hamburger">
+        <div className="hamburger" onClick={toggleHamburger}>
           <FontAwesomeIcon icon={faBars} className="bars" />
         </div>
         <ul className="ul">
@@ -53,7 +59,7 @@ function App() {
           <li><Link to="jokes-api">Jokes</Link></li>
           <li><Link to="register">Register</Link></li>
           <li><Link to="api-meaning">Api Meaning</Link></li>
-          <li>{isLoggedIn ? (<button onClick={handleLogout}>Logout</button>) : <Link to="login">Login</Link>}</li>
+          <li>{isLoggedIn ? (<button onClick={handleLogout} className="nav-btn">Logout</button>) : <Link to="login">Login</Link>}</li>
         </ul>
       </nav>
       <Routes>

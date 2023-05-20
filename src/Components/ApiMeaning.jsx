@@ -19,7 +19,7 @@ export default function ApiMeaning() {
   return (
     <div className='main'>
       {data.map((item, index) => (
-        <div key={index}>
+        <div key={index} className='key'>
           <h2>{Object.keys(item)[0]}</h2>
           <ul>
             {Object.entries(item[Object.keys(item)[0]]).map(([key, value]) => (
