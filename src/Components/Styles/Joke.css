@@ -1,0 +1,21 @@
+.joke-sec{
+    color: white;
+    background: linear-gradient(#070707ae, #111111c0), url(../gradient_1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+table, tr, td{
+    border: 2px solid #fff;
+    padding: 20px;
+}
+
+td{
+    border: 1px solid rgba(204, 255, 0, 0.382);
+}

@@ -1,0 +1,128 @@
+
+.register{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(#892be24b, #892be24b), url(../5172661.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+.reg-form{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 45px;
+}
+
+.reg-inputs{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 300px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.399);
+}
+
+h3, h4{
+    font-style: italic;
+}
+
+.reg-inputs input{
+    display: inline-block;
+    margin: 20px;
+    padding: 12px;
+    border-radius: 10px;
+    width: 260px;
+    border: 1px solid rgba(0, 0, 0, 0.267);
+}
+
+.form-img{
+    width: 300px;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+button{
+    background-color: black;
+    color: white;
+    width: 140px;
+    padding: 8px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+@media screen and (max-width:630px) {
+    .reg-form{
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 50px;
+        width: 90%;
+        background-color: white;
+        border-radius: 10px;
+    }
+
+    .reg-inputs{
+        background-color: white;
+        width: 100%;
+        height: 40vh;
+        border-top-left-radius: 0;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border: none;
+    }
+
+    .form-img{
+        width: 100%;
+    }
+
+    img{
+        height: 50vh;
+        width: 100%;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        border-bottom-right-radius: 0;
+    }
+}
+
+@media screen and (max-width:330px){
+
+    .reg-inputs{
+            background-color: white;
+            width: 100%;
+            height: 40vh;
+            border-top-left-radius: 0;
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            border: none;
+    }
+
+    .reg-inputs input{
+        display: inline-block;
+        margin: 20px;
+        padding: 12px;
+        border-radius: 10px;
+        width: 80%;
+        border: 1px solid rgba(0, 0, 0, 0.267);
+    }
+
+}

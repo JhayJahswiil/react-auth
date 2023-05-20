@@ -1,0 +1,38 @@
+.form-sec{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.591), rgba(0, 0, 0, 0.614))
+    ,url(../astronaut-explores-outer-dark-sp.png);
+}
+
+.form-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: white;
+    text-align: center;
+}
+
+.inputs{
+    background: rgba(255, 255, 255, 0.132);
+    border: 1px solid white;
+    
+}
+
+.username, .details{
+    display: flex;
+    align-items: center;
+}
+
+input, textarea{
+    width: 200px;
+    margin: 20px;
+}
+
+::placeholder{
+    font-style: italic;
+    opacity: 0.7;
+    padding: 10px;
+    font-size: 12px;
+    font-weight: bold;
+}
