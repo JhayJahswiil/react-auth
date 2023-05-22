@@ -1,4 +1,4 @@
-import { React, useState, useEffect } from "react";
+import { React, useState, useEffect, useRef } from "react";
 import { Routes, Route, Link, Navigate } from "react-router-dom";
 // import CurrencySwitcher from "./Components/CurrencySwitcher";
 // import Display from "./Components/Display";
@@ -11,14 +11,14 @@ import ApiMeaning from "./Components/ApiMeaning";
 
 import "./App.css";
 
+// FONT AWESOME LINK
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
-function App() {
-  // const [hamburgerOpen, setHamburgerOpen] = useState(false)
 
-  const toggleHamburger = () => {
-    document.getElementsByClassName('bars').style.display = 'none'
-  }
+function App() {
+  // HAMBURGER MENU
+  const [showLinks, setShowLinks] = useState(false)
+
 
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
@@ -49,11 +49,11 @@ function App() {
   return (
     <div>
       <nav className="nav-sec">
-        <span>-EDSA-</span>
-        <div className="hamburger" onClick={toggleHamburger}>
-          <FontAwesomeIcon icon={faBars} className="bars" />
+        <Link to="/" className="logo"><span>⁙.JHAY.⁙</span></Link>
+        <div className="hamburger" onClick={() => setShowLinks(!showLinks)}>
+          <FontAwesomeIcon icon={faBars} />
         </div>
-        <ul className="ul">
+        <ul className="ul" id={showLinks ? "hidden" : ""}>
           <li><Link to="/">Home</Link></li>
           <li><Link to="form">Form</Link></li>
           <li><Link to="jokes-api">Jokes</Link></li>
@@ -62,6 +62,7 @@ function App() {
           <li>{isLoggedIn ? (<button onClick={handleLogout} className="nav-btn">Logout</button>) : <Link to="login">Login</Link>}</li>
         </ul>
       </nav>
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="form" element={<Form />} />

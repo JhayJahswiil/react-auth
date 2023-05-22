@@ -55,7 +55,7 @@ img{
     border-bottom-right-radius: 10px;
 }
 
-button{
+.btn{
     background-color: black;
     color: white;
     width: 140px;
@@ -65,7 +65,7 @@ button{
     cursor: pointer;
 }
 
-button:hover{
+.btn:hover{
     background-color: white;
     color: black;
     border: 1px solid black;

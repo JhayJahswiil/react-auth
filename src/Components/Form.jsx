@@ -23,13 +23,13 @@ export default function Form() {
                     <div className='username'>
                         <input type="text" name="username" placeholder='Enter Username' value={userName} onChange={handleChange} />
                         {/* display the name in the input field on the screen once the user types in the input field */}
-                        <p>Username is: {userName}</p>
+                        <p className='output'>Username is: {userName}</p>
                     </div>
 
                     <div className='details'>
-                        <textarea name="user-details" cols="30" rows="10" placeholder='Enter Username' value={userDetails} onChange={handleUserDetailsChange}></textarea>
+                        <textarea name="user-details" cols="30" rows="10" placeholder='Enter Details' value={userDetails} onChange={handleUserDetailsChange}></textarea>
                         {/* display the user details in the textarea on the screen once the user types in the textarea */}
-                        <p>User details are: {userDetails}</p>
+                        <p className='output'>User details are: {userDetails}</p>
                     </div>
                 </div>
 
