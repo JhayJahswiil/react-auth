@@ -71,6 +71,16 @@ img{
     border: 1px solid black;
 }
 
+.error{
+    background-color: red;
+    padding: 12px;
+    color: white;
+    text-transform: uppercase;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
 @media screen and (max-width:630px) {
     .reg-form{
         display: flex;
@@ -96,7 +106,7 @@ img{
     }
 
     img{
-        height: 50vh;
+        height: 40vh;
         width: 100%;
         border-top-right-radius: 10px;
         border-top-left-radius: 10px;

@@ -14,6 +14,7 @@ import "./App.css";
 // FONT AWESOME LINK
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
+import { faXmark } from '@fortawesome/free-solid-svg-icons'
 
 function App() {
   // HAMBURGER MENU
@@ -45,13 +46,13 @@ function App() {
     return isLoggedIn ? element : <Navigate to="/login" />
   }
 
-
   return (
     <div>
       <nav className="nav-sec">
         <Link to="/" className="logo"><span>⁙.JHAY.⁙</span></Link>
         <div className="hamburger" onClick={() => setShowLinks(!showLinks)}>
           <FontAwesomeIcon icon={faBars} />
+          <FontAwesomeIcon icon={faXmark} className="cancel" />
         </div>
         <ul className="ul" id={showLinks ? "hidden" : ""}>
           <li><Link to="/">Home</Link></li>

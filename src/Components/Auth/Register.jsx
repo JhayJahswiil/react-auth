@@ -23,7 +23,7 @@ export default function Register() {
         const user = existingUsers.find((user) => user.username === username);
 
         if (user) {
-            setError('User already exists');
+            setError('User already exists!!');
             return;
         }
 
@@ -52,7 +52,7 @@ export default function Register() {
                         value={password}
                         onChange={(e) => setPassword(e.target.value)}
                     />
-                    {error && <p>{error}</p>}
+                    {error && <p className="error">{error}</p>}
                     <button type="submit" className="btn">Register</button>
                 </div>
 

@@ -66,9 +66,24 @@ body{
 .logo:hover{
     color: rgb(225, 97, 32);
 }
-
+.cancel{
+        display: none;
+    }
 
 @media screen and (max-width:630px){
+    .nav-sec{
+        background-color: rgba(22, 29, 17, 0.432);
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 33px;
+        z-index: 2;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        color: white;
+    }
+
+
     .nav-sec ul{
         display: none;
     }
@@ -79,7 +94,7 @@ body{
         right: 0;
         top: 60px;
         background-color: white;
-        height: 94vh;
+        height: 93vh;
         width: 200px;
         padding: 20px;
         text-align: center;
