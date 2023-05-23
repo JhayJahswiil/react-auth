@@ -1,6 +1,9 @@
 .form-sec{
     background-image: linear-gradient(rgba(0, 0, 0, 0.591), rgba(0, 0, 0, 0.614))
     ,url(../astronaut-explores-outer-dark-sp.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .form-form{
