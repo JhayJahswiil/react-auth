@@ -2,11 +2,14 @@
     padding-top: 5em;
     padding-inline: 10px;
     text-align: justify;
+    background: url(../Components/13338.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .key{
     margin: 20px;
-    border: 1px solid rgb(3, 171, 255);
     padding: 20px;
     background-color: rgba(11, 11, 11, 0.993);
     color: white;
